@@ -2,34 +2,34 @@ using System;
 using Gtk;
 using UI = Gtk.Builder.ObjectAttribute;
 
-namespace QuiclLaunchPanel
+namespace QuickLaunchPanel
 {
     class MainWindow : Window
     {
-        [UI] private Label _label1 = null;
-        [UI] private Button _button1 = null;
+        [UI] Label labelTest = null;
+        public MainWindow() : this("") { }
 
-        private int _counter;
-
-        public MainWindow() : this(new Builder("MainWindow.glade")) { }
-
-        private MainWindow(Builder builder) : base(builder.GetObject("MainWindow").Handle)
+        private MainWindow(string str) : base(str)
         {
-            builder.Autoconnect(this);
-
+            int width, heigth = 0;
+            MonitorInfo.GetMonitorGeometry(out heigth,out width);
+            width = (int) (width * 0.7);
+            heigth = (int) (heigth * 0.35);
+            this.SetSizeRequest(width,heigth);
+            labelTest = new Label();
+            labelTest.Expand = true;
+            HBox hbox = new HBox();
+            hbox.Fill = true;
+            hbox.Add(labelTest);
+            this.Add(hbox);
+            this.Move(0,5 - heigth);
+            this.ShowAll();
             DeleteEvent += Window_DeleteEvent;
-            _button1.Clicked += Button1_Clicked;
         }
 
         private void Window_DeleteEvent(object sender, DeleteEventArgs a)
         {
             Application.Quit();
-        }
-
-        private void Button1_Clicked(object sender, EventArgs a)
-        {
-            _counter++;
-            _label1.Text = "Hello World! This button has been clicked " + _counter + " time(s).";
         }
     }
 }

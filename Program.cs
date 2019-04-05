@@ -1,7 +1,7 @@
 using System;
 using Gtk;
 
-namespace QuiclLaunchPanel
+namespace QuickLaunchPanel
 {
     class Program
     {
@@ -10,7 +10,7 @@ namespace QuiclLaunchPanel
         {
             Application.Init();
 
-            var app = new Application("org.QuiclLaunchPanel.QuiclLaunchPanel", GLib.ApplicationFlags.None);
+            var app = new Application("org.QuickLaunchPanel.QuickLaunchPanel", GLib.ApplicationFlags.None);
             app.Register(GLib.Cancellable.Current);
 
             var win = new MainWindow();
