@@ -1,5 +1,6 @@
 using System;
 using Gtk;
+using QuickLaunchPanel.UI;
 
 namespace QuickLaunchPanel
 {
@@ -8,8 +9,9 @@ namespace QuickLaunchPanel
         [STAThread]
         public static void Main(string[] args)
         {
+            IO.CheckCreateConfig();
             Application.Init();
-
+            Controller.LoadEntries();
             var app = new Application("org.QuickLaunchPanel.QuickLaunchPanel", GLib.ApplicationFlags.None);
             app.Register(GLib.Cancellable.Current);
 
@@ -18,6 +20,7 @@ namespace QuickLaunchPanel
 
             win.Show();
             Application.Run();
+            Controller.SaveEntries();
         }
     }
 }

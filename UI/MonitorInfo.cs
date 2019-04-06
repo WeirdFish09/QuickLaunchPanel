@@ -1,6 +1,6 @@
 using System;
 using Gdk;
-namespace QuickLaunchPanel
+namespace QuickLaunchPanel.UI
 {
     public static class MonitorInfo
     {

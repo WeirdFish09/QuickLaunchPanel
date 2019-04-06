@@ -1,14 +1,15 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "b39c4733a841a4445fb4e29c16ef9da5f30df8d8"
+    "signature": "968fca17b255b27b5ae1e950b2f7de37c4dfc036"
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.0": {
       "QuickLaunchPanel/1.0.0": {
         "dependencies": {
-          "GtkSharp": "3.22.24.37"
+          "GtkSharp": "3.22.24.37",
+          "Newtonsoft.Json": "12.0.1"
         },
         "runtime": {
           "QuickLaunchPanel.dll": {}
@@ -62,6 +63,11 @@
         },
         "runtime": {
           "lib/netstandard2.0/GtkSharp.dll": {}
+        }
+      },
+      "Newtonsoft.Json/12.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
       "PangoSharp/3.22.24.37": {
@@ -122,6 +128,13 @@
       "sha512": "sha512-Hnm/LP4Jj03oT1TYihBeCpop5lwdCLmRYitGrAq7vLDqK44aQUKbNEpRu1IlhjlCwCpq4s9lYOoq3XbHtdlOOw==",
       "path": "gtksharp/3.22.24.37",
       "hashPath": "gtksharp.3.22.24.37.nupkg.sha512"
+    },
+    "Newtonsoft.Json/12.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jmVyoEyk0In8r+AObYQyFKVFm7uSRzE0XSHSbEtBJcZDMV6DqJoyB4FLcHwprPVhAh826so0db3DIKXVnpGoPA==",
+      "path": "newtonsoft.json/12.0.1",
+      "hashPath": "newtonsoft.json.12.0.1.nupkg.sha512"
     },
     "PangoSharp/3.22.24.37": {
       "type": "package",
