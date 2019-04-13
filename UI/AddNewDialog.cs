@@ -1,4 +1,5 @@
 using System;
+using System.Text;
 using Gtk;
 namespace QuickLaunchPanel.UI
 {
@@ -46,7 +47,7 @@ namespace QuickLaunchPanel.UI
         }
         private void OnConfirm(object sender, EventArgs e){
             EntryName = nameEntry.Text;
-            EntryCommand = commandEntry.Text;
+            EntryCommand = "\"" + commandEntry.Text + "\"";
             this.Hide();
         }
         private void OnCancel(object sender, EventArgs e){

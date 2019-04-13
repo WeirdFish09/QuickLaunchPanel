@@ -2,12 +2,13 @@ using System;
 using System.IO;
 using System.Collections.Generic;
 using Newtonsoft.Json;
+using System.Configuration;
 namespace QuickLaunchPanel
 {
     public static class IO
     {
-        private static string home = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-        private static string path = home + "/.config/QLP/Entries.json";
+        private static string configPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal) + "/.config";
+        private static string path = configPath + ConfigurationManager.AppSettings["EntriesPath"] + ConfigurationManager.AppSettings["EntriesFile"];
         public static List<Entry> LoadEntries()
         {
             using (StreamReader sr = new StreamReader(path))
@@ -29,10 +30,10 @@ namespace QuickLaunchPanel
         }
         public static void CheckCreateConfig()
         {
-            DirectoryInfo di = new DirectoryInfo(home + "/.config");
-            if (!di.GetDirectories().FolderExists("QLP"))
+            DirectoryInfo di = new DirectoryInfo(configPath);
+            if (!di.GetDirectories().FolderExists(ConfigurationManager.AppSettings["EntriesPath"].Replace("/","")))
             {
-                Directory.CreateDirectory(home + "/.config/QLP");
+                Directory.CreateDirectory(configPath + ConfigurationManager.AppSettings["EntriesPath"]);
                 using (StreamWriter sw = new StreamWriter(path, false)) { };
             }
         }

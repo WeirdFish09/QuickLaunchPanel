@@ -2,7 +2,8 @@
   "runtimeOptions": {
     "additionalProbingPaths": [
       "/home/weirdo/.dotnet/store/|arch|/|tfm|",
-      "/home/weirdo/.nuget/packages"
+      "/home/weirdo/.nuget/packages",
+      "/home/weirdo/dotnet/dotnetsdk/sdk/NuGetFallbackFolder"
     ]
   }
 }

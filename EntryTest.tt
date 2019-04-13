@@ -1,0 +1,18 @@
+<#@ template language="c#" #>
+<#@ output extension=".cs" #>
+<# string[] properties = new string [] {"Name", "Command"}; #>
+namespace QuickLaunchPanel
+{
+  public class Entry { 
+  <#
+    foreach (string prop in vars)  
+    { #>   
+    public string <#= prop #>{get; private set;}
+    <# } #>
+    public Entry(string name, string command)
+        {
+            Command = command;
+            Name = name;
+        }
+  }
+}

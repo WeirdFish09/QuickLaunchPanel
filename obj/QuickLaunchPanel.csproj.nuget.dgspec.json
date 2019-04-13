@@ -1,0 +1,70 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/weirdo/CSharp/QuickLaunchPanel/QuickLaunchPanel.csproj": {}
+  },
+  "projects": {
+    "/home/weirdo/CSharp/QuickLaunchPanel/QuickLaunchPanel.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/weirdo/CSharp/QuickLaunchPanel/QuickLaunchPanel.csproj",
+        "projectName": "QuickLaunchPanel",
+        "projectPath": "/home/weirdo/CSharp/QuickLaunchPanel/QuickLaunchPanel.csproj",
+        "packagesPath": "/home/weirdo/.nuget/packages/",
+        "outputPath": "/home/weirdo/CSharp/QuickLaunchPanel/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/home/weirdo/dotnet/dotnetsdk/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/home/weirdo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.0": {
+          "dependencies": {
+            "GtkSharp": {
+              "target": "Package",
+              "version": "[3.22.24.*, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.0, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

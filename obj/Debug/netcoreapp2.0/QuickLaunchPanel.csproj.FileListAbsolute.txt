@@ -3,9 +3,10 @@
 /home/weirdo/CSharp/QuickLaunchPanel/bin/Debug/netcoreapp2.0/QuickLaunchPanel.runtimeconfig.dev.json
 /home/weirdo/CSharp/QuickLaunchPanel/bin/Debug/netcoreapp2.0/QuickLaunchPanel.dll
 /home/weirdo/CSharp/QuickLaunchPanel/bin/Debug/netcoreapp2.0/QuickLaunchPanel.pdb
-/home/weirdo/CSharp/QuickLaunchPanel/obj/Debug/netcoreapp2.0/QuickLaunchPanel.csprojResolveAssemblyReference.cache
 /home/weirdo/CSharp/QuickLaunchPanel/obj/Debug/netcoreapp2.0/QuickLaunchPanel.csproj.CoreCompileInputs.cache
 /home/weirdo/CSharp/QuickLaunchPanel/obj/Debug/netcoreapp2.0/QuickLaunchPanel.AssemblyInfoInputs.cache
 /home/weirdo/CSharp/QuickLaunchPanel/obj/Debug/netcoreapp2.0/QuickLaunchPanel.AssemblyInfo.cs
 /home/weirdo/CSharp/QuickLaunchPanel/obj/Debug/netcoreapp2.0/QuickLaunchPanel.dll
 /home/weirdo/CSharp/QuickLaunchPanel/obj/Debug/netcoreapp2.0/QuickLaunchPanel.pdb
+/home/weirdo/CSharp/QuickLaunchPanel/obj/Debug/netcoreapp2.0/QuickLaunchPanel.csprojAssemblyReference.cache
+/home/weirdo/CSharp/QuickLaunchPanel/bin/Debug/netcoreapp2.0/QuickLaunchPanel.dll.config
